@@ -3,6 +3,6 @@ It's a tool to change your mac address how often you want, this is useful when y
 
 # Installtion (tested on kali linux)
 
-sudo apt install macchanger
+~ sudo apt install macchanger
 
-* git clone 
+* git clone https://github.com/Cyber-Storm7/Auto-Mac-Changer.git
