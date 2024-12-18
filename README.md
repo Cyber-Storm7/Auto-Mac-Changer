@@ -5,4 +5,4 @@ It's a tool to change your mac address how often you want, this is useful when y
 
 sudo apt install macchanger
 
-git clone 
+* git clone 
