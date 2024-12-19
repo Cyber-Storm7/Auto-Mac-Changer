@@ -21,51 +21,23 @@ style_print("                                      [ Made by Cyber Storm ]", 'cy
 style_print("[+] Welcome to Auto Mac Changer [+]", 'red')
 print()
 a = (input(colored("[*] How often you want to change your mac address(In seconds)----> ", 'red', attrs=['bold'])))
-if '1' in a:
+
+def check_and_cast(input_value):
+    try:
+        # Attempt to convert the input to an integer
+        return int(input_value)
+    except ValueError:
+        # If conversion fails, print "wrong input"
+        print()
+        style_print("[*] Invalid input", 'red')
+
+# Call the function and print the result
+result = check_and_cast(a)
+if result is not None:
     a = int(a)
     while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '2' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '3' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '4' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '5' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '6' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '7' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '8' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
-        time.sleep(a)
-elif '9' in a:
-    a = int(a)
-    while True:
-        os.system("sudo macchanger -r eth0")
+        os.system('sudo macchanger -r eth0')
         time.sleep(a)
 else:
-    style_print("[+] Wrong Input [+]", 'red')
+    time.sleep(3)
     
