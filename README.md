@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```bash
 python3 macchanger.py
 ```
-* To stop the script press Ctrl + C , and after stopping it type :
+* To stop the script press Ctrl + C , and now if you want to change your to the permanent on run :
 ```bash
 sudo macchanger -p eth0
 ```
